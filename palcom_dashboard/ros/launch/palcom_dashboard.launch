@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+        <!-- start palcom dashboard node -->
+        <node pkg="palcom_dashboard" type="palcom_dashboard" name="palcom_dashboard_node" ns="palcom_dashboard" output="screen"/>
+
+</launch>
+

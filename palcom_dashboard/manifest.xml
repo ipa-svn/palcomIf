@@ -1,0 +1,24 @@
+<package>
+  <description brief="palcom_dashboard">
+
+     palcom_dashboard
+
+  </description>
+  <author>Sofie</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/palcom_dashboard</url>
+  <depend package="std_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+  <depend package="move_base_msgs"/>
+
+  <!-- As we deviate from the standard ROS Repository-Structure we have to tell ROS where to find header and lib -->
+  <export>
+    <cpp cflags="-I/usr/local/include" lflags="-Wl,-rpath,/usr/local/lib -L/usr/local/lib -llibpalcom.so"/>
+  </export>
+
+</package>
+
+
