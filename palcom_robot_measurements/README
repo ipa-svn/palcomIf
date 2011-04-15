@@ -1,0 +1,1 @@
+Reades the robot platform velocities from ros topic and forward the values to palcom.

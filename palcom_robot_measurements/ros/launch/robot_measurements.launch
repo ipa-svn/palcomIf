@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+
+	<!-- upload parameters-->
+	
+	<!-- start palcom teleop node -->
+	<node pkg="palcom_robot_measurements" type="palcom_robot_measurements" name="palcom_robot_measurements_node" args="eth0" ns="measurements" output="screen"/>
+
+</launch>

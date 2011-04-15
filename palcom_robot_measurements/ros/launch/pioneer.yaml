@@ -1,0 +1,5 @@
+
+base: {
+  max_velocity: [0.3, 2.0],
+  max_acceleration: [0.7, 1.0]
+}

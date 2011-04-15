@@ -1,0 +1,15 @@
+<package>
+  <description brief="palcom_robot_measurements">
+
+     palcom_robot_measurements
+
+  </description>
+  <author>winadmin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/palcom_robot_measurements</url>
+  <depend package="roscpp"/>
+
+</package>
+
+
