@@ -1,0 +1,23 @@
+<package>
+  <description brief="palcom_teleop">
+
+     palcom_teleop
+
+  </description>
+  <author>Sofie</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/palcom_teleop</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="trajectory_msgs"/>
+  <depend package="joy"/>
+
+<!-- As we deviate from the standard ROS Repository-Structure we have to tell ROS where to find header and lib -->
+  <export>
+    <cpp cflags="-I/usr/local/include" lflags="-Wl,-rpath,/usr/local/lib -L/usr/local/lib -llibpalcom.so"/>
+  </export>
+</package>
+
+

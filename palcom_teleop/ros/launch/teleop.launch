@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<launch>
+
+	<!-- upload parameters-->
+	<rosparam command="load" ns="teleop/joy" file="$(find palcom_teleop)/ros/launch/teleop.yaml"/>
+	<rosparam command="load" ns="teleop/modules" file="$(find palcom_teleop)/ros/launch/$(env ROBOT).yaml"/>
+
+	<!-- start palcom teleop node -->
+	<node pkg="palcom_teleop" type="palcom_teleop" name="palcom_teleop_node" args="eth0" ns="teleop" output="screen"/>
+
+	<!-- run joystick -->
+        <node pkg="joy" type="joy_node" name="joy_node">
+                <param name="dev" type="string" value="/dev/input/js0" />
+                <param name="deadzone" value="0.12" />
+        </node>
+
+</launch>

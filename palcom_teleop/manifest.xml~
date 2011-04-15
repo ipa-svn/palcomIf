@@ -1,0 +1,15 @@
+<package>
+  <description brief="palcom_teleop">
+
+     palcom_teleop
+
+  </description>
+  <author>winadmin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/palcom_teleop</url>
+  <depend package="roscpp"/>
+
+</package>
+
+
